@@ -1,42 +1,57 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="BLL.Mapper.Mapper">
-    <Position X="4.25" Y="0.5" Width="1.5" />
+    <Position X="21" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Mapper\Mapper.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BLL.Object.Cafe">
-    <Position X="0.75" Y="0.5" Width="1.5" />
+    <Position X="15.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAAAAAAIAAAQAAQAAAAAAAEAiAECAAAA=</HashCode>
       <FileName>Object\Cafe.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BLL.Object.CafeInfo">
-    <Position X="2.5" Y="0.5" Width="1.5" />
+    <Position X="21" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAiCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
       <FileName>Object\CafeInfo.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BLL.Object.Place">
-    <Position X="4.25" Y="2" Width="1.5" />
+    <Position X="19.25" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>IAAAAAABAAAAAAAAAEAAAAAAAAAAAAAAgAAAAAAAAAI=</HashCode>
       <FileName>Object\Place.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BLL.Object.Worker">
-    <Position X="2.5" Y="2.5" Width="1.5" />
+    <Position X="17.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAgAAAAAAAAAABAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Object\Worker.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="BLL.Repositories.CafeRepository">
+    <Position X="7.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\CafeRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BLL.Repositories.Repository&lt;TEntity&gt;">
+    <Position X="11" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAgAAAADAAAAABAAAAAAIAAAAAgAAAIAEAAA=</HashCode>
+      <FileName>Repositories\Repository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
   <Class Name="BLL.Services.CafeServices" BaseTypeListCollapsed="true">
-    <Position X="6" Y="0.5" Width="1.5" />
+    <Position X="15.5" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Services\CafeServices.cs</FileName>
@@ -44,32 +59,75 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="BLL.Services.PlaceServices" BaseTypeListCollapsed="true">
-    <Position X="6" Y="1.5" Width="1.5" />
+    <Position X="17.25" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Services\PlaceServices.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="BLL.Repositories.CafeRepository" Collapsed="true">
-    <Position X="0.5" Y="0.5" Width="1.5" />
+  <Class Name="BLL.Services.WorkerServices" BaseTypeListCollapsed="true">
+    <Position X="19" Y="5.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Repositories\CafeRepository.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\WorkerServices.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Interface Name="BLL.Interfaces.ICafeServices">
-    <Position X="6" Y="2.5" Width="1.5" />
+    <Position X="15.5" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\ICafeServices.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="BLL.Interfaces.IPlaceServices">
-    <Position X="6" Y="3.5" Width="1.5" />
+    <Position X="17.25" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\IPlaceServices.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BLL.Interfaces.IWorkerServices">
+    <Position X="19" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IWorkerServices.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BLL.Repositories.ICafeInfoRepository">
+    <Position X="13.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\ICafeInfoRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BLL.Repositories.ICafeRepository">
+    <Position X="7" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\ICafeRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BLL.Repositories.IPlaceRepository">
+    <Position X="8" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\IPlaceRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BLL.Repositories.IRepository&lt;T&gt;">
+    <Position X="10.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAADAAAAAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Repositories\IRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BLL.Repositories.IWorkerRepository">
+    <Position X="12.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\IWorkerRepository.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />

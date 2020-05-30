@@ -1,12 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="DAL.API">
-    <Position X="3.5" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAACAgBAIAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>API.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="LR.Config.CafeConfig">
     <Position X="10.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
