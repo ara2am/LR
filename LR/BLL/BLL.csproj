@@ -43,6 +43,9 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Ninject, Version=3.3.4.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.3.3.4\lib\net45\Ninject.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -55,14 +58,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Interfaces\ICafeServices.cs" />
+    <Compile Include="Interfaces\IPlaceServices.cs" />
+    <Compile Include="Interfaces\IWorkerServices.cs" />
     <Compile Include="Mapper\Mapper.cs" />
     <Compile Include="Object\Cafe.cs" />
     <Compile Include="Object\CafeInfo.cs" />
     <Compile Include="Object\Place.cs" />
     <Compile Include="Object\Worker.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\CafeRepository.cs" />
+    <Compile Include="Repositories\ICafeInfoRepository.cs" />
+    <Compile Include="Repositories\ICafeRepository.cs" />
+    <Compile Include="Repositories\IPlaceRepository.cs" />
+    <Compile Include="Repositories\IRepository.cs" />
+    <Compile Include="Repositories\IWorkerRepository.cs" />
+    <Compile Include="Repositories\Repository.cs" />
     <Compile Include="Services\CafeServices.cs" />
-    <Compile Include="API.cs" />
+    <Compile Include="Services\PlaceServices.cs" />
+    <Compile Include="Services\WorkerServices.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">

@@ -43,6 +43,9 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Ninject, Version=3.3.4.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.3.3.4\lib\net45\Ninject.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -54,26 +57,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="API.cs" />
     <Compile Include="Config\CafeConfig.cs" />
     <Compile Include="Config\CafeInfoConfig.cs" />
     <Compile Include="Config\PlaceConfig.cs" />
     <Compile Include="Config\WorkerConfig.cs" />
     <Compile Include="DataModel\CafeContext.cs" />
-    <Compile Include="DBConnection.cs" />
     <Compile Include="Entities\Cafe.cs" />
     <Compile Include="Entities\CafeInfo.cs" />
     <Compile Include="Entities\Place.cs" />
     <Compile Include="Entities\Worker.cs" />
-    <Compile Include="Migrations\202005031918170_InitialCreate.cs" />
-    <Compile Include="Migrations\202005031918170_InitialCreate.Designer.cs" />
-    <Compile Include="Migrations\202005032012447_OneToOne.cs" />
-    <Compile Include="Migrations\202005032012447_OneToOne.Designer.cs" />
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\202005031918170_InitialCreate.resx" />
-    <EmbeddedResource Include="Migrations\202005032012447_OneToOne.resx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
