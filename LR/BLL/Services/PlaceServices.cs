@@ -1,11 +1,11 @@
-﻿using System;
+﻿using BLL.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Text;
-using BLL.Interfaces;
 
 namespace BLL.Services
 {
-    class CafeServices : ICafeServices
+    class PlaceServices : IPlaceServices
     {
     }
 }
