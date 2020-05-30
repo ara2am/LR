@@ -5,18 +5,19 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{88BE3E5A-145B-4E6D-B6CA-882D9904B507}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DAL</RootNamespace>
-    <AssemblyName>DAL</AssemblyName>
+    <ProjectGuid>{9D75A471-FAF6-4231-8B19-193B9C30A5EC}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>LR</RootNamespace>
+    <AssemblyName>LR</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -26,6 +27,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -54,30 +56,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Config\CafeConfig.cs" />
-    <Compile Include="Config\CafeInfoConfig.cs" />
-    <Compile Include="Config\PlaceConfig.cs" />
-    <Compile Include="Config\WorkerConfig.cs" />
-    <Compile Include="DataModel\CafeContext.cs" />
-    <Compile Include="DBConnection.cs" />
-    <Compile Include="Entities\Cafe.cs" />
-    <Compile Include="Entities\CafeInfo.cs" />
-    <Compile Include="Entities\Place.cs" />
-    <Compile Include="Entities\Worker.cs" />
-    <Compile Include="Migrations\202005031918170_InitialCreate.cs" />
-    <Compile Include="Migrations\202005031918170_InitialCreate.Designer.cs" />
-    <Compile Include="Migrations\202005032012447_OneToOne.cs" />
-    <Compile Include="Migrations\202005032012447_OneToOne.Designer.cs" />
-    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\202005031918170_InitialCreate.resx" />
-    <EmbeddedResource Include="Migrations\202005032012447_OneToOne.resx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{1855fad1-ffe9-4745-a0d0-633410f9bb02}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
